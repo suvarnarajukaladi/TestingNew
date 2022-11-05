@@ -13,7 +13,7 @@ public class Testing {
 		HtmlUnitDriver driver=new HtmlUnitDriver(BrowserVersion.FIREFOX_38);
 		driver.get("http://172.31.33.31:8080/qapath/");
 		System.out.println(driver.getCurrentUrl());
-		String expmsg="Hello, World! Welcome to World of Devops!";
+		String expmsg="Hello, Welcome to World of Devops!";
 		String actmsg=driver.findElement(By.xpath("html/body")).getText();
 		System.out.println("Expected Message : "+expmsg);
 		System.out.println("Actual Message   : "+actmsg);
